@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Select and Redirect</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      gap: 1rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    button {
+      background-color: #3b82f6;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select a page to visit:</h1>
+  
+  <button onclick="redirectTo('/portfolio-2025/')">Portfolio 2025</button>
+  <button onclick="redirectTo('/blog/')">Blog</button>
+  <button onclick="redirectTo('https://example.com/contact')">Contact</button>
+
+  <script>
+    function redirectTo(url) {
+      // Optionally show a message or loader before redirecting
+      document.body.innerHTML = `
+        <h1>Redirecting...</h1>
+        <p>You will be redirected shortly.</p>
+        <div style="margin-top:20px; width:48px; height:48px; border:5px solid #f8fafc; border-bottom-color:transparent; border-radius:50%; animation: spin 1s linear infinite;"></div>
+        <style>
+          @keyframes spin { to { transform: rotate(360deg); } }
+        </style>
+      `;
+      setTimeout(() => {
+        window.location.href = url;
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
