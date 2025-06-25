@@ -128,4 +128,14 @@ h1 {
   h1, h2 { 
     font-size: 1.2em;
   }
+
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    padding-left: 10px;
+    background-color: #9c9c9c;
+  }
 }
