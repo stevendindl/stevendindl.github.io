@@ -33,20 +33,19 @@ h1 {
   align-items: center;
   gap: 50px;
   padding: 10px;
-  background-color: #aa6565;
+  padding-left: 30px;
+  background-color: #9c9c9c;
 }
 
 .intro {
   display: flex;
   justify-content: center;
-  gap: 10px;
   padding: 20px;
   background-color: #f0f0f0;
   border-radius: 8px;
 }
 
 .intro-left {
-  gap: 10px;
   padding-top: 50px;
   /* padding: 90px; */
   background-color: #f0f0f0;
@@ -70,7 +69,7 @@ h1 {
 }
 
 .contact {
-  display:block;
+  text-align: center;
   padding: 20px;
   background-color: #e0e0e0;
   border-radius: 8px;
@@ -94,6 +93,11 @@ h1 {
 .lower-footer {
   font-size: 0.8em;
   color: #999;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 830px) {
