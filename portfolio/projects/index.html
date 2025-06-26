@@ -8,17 +8,29 @@
   <title>Steven Dindl - Summer 2025</title>
   <link rel="stylesheet" href="/portfolio/styles.css" />
   <link rel="icon" type="image/svg+xml" href="/portfolio/images/solo-logo.svg" />
+  <link rel="preload" href="/portfolio/images/text-logo.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="/portfolio/images/snow-me.jpg" as="image" type="image/jpeg">
 </head>
 
 <body>
   <!-- Nav bar -->
-  <div class="navbar">
-    <h1><a href="/portfolio/">STEVEN DINDL</a></h1>
-    <h2><a href="/portfolio/projects/">Projects</a></h2>
-    <!-- <h2><a href="/portfolio/more/">More</a></h2> -->
-  </div>
+  <nav>
+    <div class="nav-left">
+      <a href="/portfolio/">
+        <img src="/portfolio/images/text-logo.svg" alt="Steven Dindl" class="nav-logo" />
+      </a>
+    </div>
 
-  <div class="projects">
+    <div class="nav-right">
+      <h2><a href="/portfolio/">Home</a></h2>
+      <h2><a href="/portfolio/projects/">Projects</a></h2>
+      <h2><a href="/portfolio/more/">More</a></h2>
+    </div>
+    
+  </nav>
+
+  <div class = "main">
+    <div class="projects">
 
     <h3>Projects</h3>
       
@@ -77,7 +89,7 @@
       </p>
     </div>
   </div>
-          
+  </div>  
 
   <!-- Footer -->
   <div class="footer">

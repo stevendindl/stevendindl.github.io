@@ -2,79 +2,109 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steven Dindl - Summer 2025</title>
+  <title>Steven's Portfolio</title>
   <link rel="stylesheet" href="/portfolio/styles.css" />
   <link rel="icon" type="image/svg+xml" href="/portfolio/images/solo-logo.svg" />
+  <link rel="preload" href="/portfolio/images/text-logo.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="/portfolio/images/snow-me.jpg" as="image" type="image/jpeg">
 </head>
 
 <body>
   <!-- Nav bar -->
-  <div class="navbar">
-    <h1><a href="/portfolio/">STEVEN DINDL</a></h1>
-    <h2><a href="/portfolio/projects/">Projects</a></h2>
-    <!-- <h2><a href="/portfolio/more/">More</a></h2> -->
-  </div>
+  <nav>
+    <div class="nav-left">
+      <a href="/portfolio/">
+        <img src="/portfolio/images/text-logo.svg" alt="Steven Dindl" class="nav-logo" />
+      </a>
+    </div>
 
-  <!-- Intro section -->
-  <div class="intro">
-      <div class="intro-left">
-        <img src="/portfolio/images/snow-me.jpg" alt="this is me -> :D" class="self-img" />
-        <h3>Steven Dindl<h3>
-        <h4><em>Senior Computer Science Student</em></h4>
-        <h4><em style="color: #73000a;">University of South Carolina</em></h4>
-      </div>
+    <div class="nav-right">
+      <h2><a href="/portfolio/">Home</a></h2>
+      <h2><a href="/portfolio/projects/">Projects</a></h2>
+      <h2><a href="/portfolio/more/">More</a></h2>
+    </div>
 
-      <div class="intro-right">
-          <p>
-            With a strong foundation in software development, I'm focused on becoming a part of the 
-            development of AI tools and solutions that have real-world impact. 
-            My recent work spans from robotics to managing data for convolutional neural network based detection systems. 
-            The possibilies and potential impact programming enables is what excites me most about software engineering.
-          </p>
-          <p><em>
-            Research/project interests:
-          </em></p>
-          <ul>
-            <li>Natural language processing (large language model development)</em></li>
-            <li>Heuristic algorithms (for efficient problem solving, such as robot pathfinding)</em></li>
-            <li>Applied machine learning for clinical practices (open-source tools to support at-home, pre-diagnosis assessments via computer vision)</li>
-          </ul>
-        <!-- Resume download -->
-        <p><a href="/portfolio/files/Steven_Dindl_Resume_2025.pdf" class="resume-link" download>Download my resume</a></p>
+  </nav>
+
+  <div class="main">
+
+    <!-- Intro section -->
+    <!-- <div class="intro"> -->
+      <div class="intro-flex">
+        <div class="intro-title">
+          <h3>Steven Dindl</h3>
+          <h4><em>Senior Computer Science Student</em></h4>
+          <h4 style="color: #73000a;">University of South Carolina</h4>
+        </div>
+        <img src="/portfolio/images/snow-me.jpg" alt="Steven Dindl" class="self-img" />
       </div>
+    <!-- </div> -->
+
+    <p>
+      With a strong foundation in software development, I'm focused on contributing to AI tools and solutions with
+      real-world impact.
+      My recent work spans robotics, script and application development, and handling data for convolutional neural network-based detection systems.
+      The possibilities and potential impact of programming is what excites me most about software engineering.
+    </p>
+
+    <p><em>Research/project interests:</em></p>
+    <ul>
+      <li>Natural language processing (large language model development)</li>
+      <li>Heuristic algorithms (efficient problem solving, e.g., robot pathfinding)</li>
+      <li>Applied machine learning for clinical practices (open-source tools for at-home, pre-diagnosis assessments via
+        computer vision)</li>
+    </ul>
+
+    <!-- Resume download -->
+    <p>
+      View my <a href="/portfolio/resume" class="resume-link">resume</a><br>
+      Connect and message me on <a href="https://www.linkedin.com/in/steven-dindl/">LinkedIn</a><br>
+      Or reach out via email <a href="mailto:stevenm.dindl@gmail.com">stevenm.dindl@gmail.com</a> / <a href="mailto:sdindl@email.sc.edu">sdindl@email.sc.edu</a>
+    </p>
   </div>
 
   <!-- Jobs section -->
   <div class="jobs">
-    <h3>Working with</h3>
-
-    <p>Integer Techologies LLC</p>
-    <p>Starship Techologies Inc.</p>
+    <div class="jobs-heading">
+      <h3>Industry Experience</h3>
+    </div>
+    <div class="jobs-list">
+      <a class="job-entry" href="https://www.integer-tech.com/" target="_blank" rel="noopener">
+        <img src="/portfolio/images/integer.jpeg" alt="Integer Technologies Logo" class="job-logo" />
+        <span>Integer Technologies LLC</span>
+      </a>
+      <a class="job-entry" href="https://www.starship.xyz/" target="_blank" rel="noopener">
+        <img src="/portfolio/images/starship.jpeg" alt="Starship Technologies Logo" class="job-logo" />
+        <span>Starship Technologies Inc.</span>
+      </a>
+    </div>
   </div>
 
   <!-- Contact section -->
-  <div class="contact">
-    <h3>Connect with me and contact me</h3>
+  <!-- <div class="contact">
+    <h3>Connect with me and contact me</h3> -->
 
-      <!-- <a href="https://www.linkedin.com/in/steven-dindl/" class="contact-icon">
-        <img src="/portfolio/images/linkedin.png" alt="LN" />
-      </a> -->
+    <!-- <a href="https://www.linkedin.com/in/steven-dindl/" class="contact-icon">
+          <img src="/portfolio/images/linkedin.png" alt="LN" />
+        </a> -->
 
-      <p><a href="https://www.linkedin.com/in/steven-dindl/">LinkedIn</a></p>
+    <!-- <p><a href="https://www.linkedin.com/in/steven-dindl/">LinkedIn</a></p>
 
-      
-      <p><a href="mailto:stevenm.dindl@gmail.com">stevenm.dindl@gmail.com</p>
+    <p><a href="mailto:stevenm.dindl@gmail.com">stevenm.dindl@gmail.com</p>
+  </div> -->
+
   </div>
 
   <!-- Footer -->
   <div class="footer">
     <div class="upper-footer">
       <h2><a href="/portfolio/">Home</a></h1>
-      <h2><a href="/portfolio/projects/">Projects</a></h2>
-      <!-- <h2><a href="/portfolio/more/">More</a></h2> -->
+        <h2><a href="/portfolio/projects/">Projects</a></h2>
+        <!-- <h2><a href="/portfolio/more/">More</a></h2> -->
     </div>
 
     <div class="lower-footer">
@@ -86,4 +116,5 @@
 
 
 </body>
+
 </html>
