@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 a {
@@ -112,7 +113,8 @@ nav {
 .intro-flex {
   display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: center;
+  gap: 10%;
   margin-bottom: 1em;
 }
 
@@ -123,7 +125,7 @@ nav {
 
 .self-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -135,7 +137,7 @@ nav {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   line-height: 1.1;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .intro-title h4 {
@@ -151,17 +153,15 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 32px 0 24px 0;
   background: none;
   border-radius: 0;
-  margin: 0 auto 24px auto;
-  max-width: 600px;
+  max-width: 100%;
 }
 
-.jobs-heading {
+/* .jobs-heading {
   margin-bottom: 10px;
   text-align: center;
-}
+} */
 
 .jobs-list {
   display: flex;
@@ -174,19 +174,36 @@ nav {
 
 .job-entry {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  align-items: flex-start;
+  gap: 5%;
   background: #f7f7f7;
-  padding: 12px 18px;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  transition: box-shadow 0.2s, background 0.2s;
   text-decoration: none;
   color: inherit;
-  min-width: 220px;
-  max-width: 260px;
-  justify-content: flex-start;
+  min-width: 180px;
+  max-width: 98vw;
+  flex: 1 1 180px;
+  padding: 12px 10px;
   border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.jobs-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.job-entry b span {
+  font-size: 1.08em;
+}
+
+.job-entry p {
+  margin: 0;
+  font-size: 0.98em;
+  color: #304355;
+  font-weight: 500;
 }
 
 .job-entry:hover {
@@ -213,7 +230,7 @@ nav {
 
 /* footer start */
 
-.footer {
+footer {
   text-align: center;
   padding: 20px;
   background-color: #A8A8A8;
@@ -258,8 +275,23 @@ nav {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1420px) {
+  .jobs-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-entry {
+    padding: 0 8px;
+    width: 90%;
+    height: min-content;
+    max-height: min-content;
+    max-width: 90%;
+    flex: none;
+    padding-top: 5px;
+  }
+}
 
+@media (max-width: 1200px) {
 
   .self-img {
     width: 350px;
@@ -291,10 +323,10 @@ nav {
 /* Mobile / shrunken styles */
 @media (max-width: 850px) {
 
-  .main {
+  /* .main {
     padding-left: 5%;
     padding-right: 5%;
-  }
+  } */
 
   .self-img {
     width: 350px;
@@ -318,6 +350,10 @@ nav {
 
 }
 
+/* @media (max-width: 700px) {
+  
+} */
+
 @media (max-width: 600px) {
   h1, h2 { 
     font-size: 1.2em;
@@ -338,17 +374,26 @@ nav {
     padding-right: 3%;
   }
 
-  .jobs-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .nav-left {
     padding-left: 8%;
   }
 
   .nav-right {
     padding-right: 7%;
+  }
+
+  .jobs-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-entry {
+    padding: 0 8px;
+    width: 90%;
+    height: min-content;
+    max-height: min-content;
+    max-width: 90%;
+    flex: none;
+    padding-top: 5px;
   }
   
 }
@@ -388,6 +433,18 @@ this look great on my iphone 5s /:) */
   }
   .intro-title h4 {
     font-size: 1em;
+  }
+
+  .jobs-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-entry {
+    width: 95vw;
+    max-width: 98vw;
+    max-width: 90%;
+    flex: none;
+    padding: 0;
   }
 
 }
@@ -486,7 +543,7 @@ this look great on my iphone 5s /:) */
   }
 }
 
-.document-viewer-spacer {
+.footer-spacer {
   min-height: 40vh;
   width: 100%;
 }
