@@ -71,7 +71,8 @@ nav {
 
 .nav-logo:hover,
 .nav-logo:focus {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(61%) saturate(348%) hue-rotate(94deg) brightness(92%) contrast(92%);
+  /* matching 304355 */
+  filter: brightness(0) saturate(100%) invert(19%) sepia(16%) saturate(1762%) hue-rotate(170deg) brightness(93%) contrast(89%);
 }
 
 .nav-right {
@@ -89,7 +90,9 @@ nav {
 }
 
 .nav-right a:hover {
-  color: #0f7e47;
+  color: #324B4F; 
+  /* */
+  /* old : 0f7e47 */
 }
 
 .navbar a {
@@ -482,7 +485,7 @@ this look great on my iphone 5s /:) */
 
 .document-viewer-header button,
 .document-viewer-header a {
-  background: #27333f;              /* Match logo/nav button color */
+  background: #27333f;              
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -503,7 +506,7 @@ this look great on my iphone 5s /:) */
 .document-viewer-header a:hover,
 .document-viewer-header button:focus,
 .document-viewer-header a:focus {
-  background: #0f7e47;              /* Use your nav hover color */
+  background: #324B4F;              
   color: #fff;
   box-shadow: 0 2px 8px rgba(15,126,71,0.15);
   transform: translateY(-2px) scale(1.04);
@@ -511,7 +514,7 @@ this look great on my iphone 5s /:) */
 
 .document-viewer-header button:active,
 .document-viewer-header a:active {
-  background: #446b85;              /* Slightly different for active/click */
+  background: #FF8D3E;
   color: #fff;
   transform: scale(0.98);
 }
