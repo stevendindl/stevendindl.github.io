@@ -24,6 +24,8 @@ body {
   background-color: rgb(255, 255, 255);
   padding-bottom: 0;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -31,6 +33,13 @@ body {
   padding-right: 30%;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+/* Makes sure there is a gap between main and footer by postitioning */
+.wrapper {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1, h2 {
@@ -238,7 +247,10 @@ footer {
   padding: 20px;
   background-color: #A8A8A8;
   color: #e0e0e0;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .upper-footer {
@@ -262,9 +274,14 @@ footer {
   display: center;
 }
 
-.contact-icon {
-  width: 50px;
-  height: 50px;
+.footer-spacer {
+  min-height: 40vh;
+  width: 100%;
+}
+
+.dynamic-footer-spacer {
+  /* padding-bottom: 20%; */
+  width: 100%;
 }
 
 /* Start of projects classes */
@@ -276,6 +293,15 @@ footer {
   border-radius: 8px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media (min-height: 1150px) and (min-width: 1360) {
+  /* nav {
+    margin-top: ;
+  } */
+  .wrapper {
+      min-height: 100vh; 
+  }
 }
 
 @media (max-width: 1420px) {
@@ -544,11 +570,6 @@ this look great on my iphone 5s /:) */
     align-items: center;
     gap: 12px;
   }
-}
-
-.footer-spacer {
-  min-height: 40vh;
-  width: 100%;
 }
 
 @media (max-width: 600px) {
