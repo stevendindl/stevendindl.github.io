@@ -437,7 +437,7 @@ this look great on my iphone 5s /:) */
     padding-left: 0px;
   }
   .nav-logo {
-    height: 30px;
+    height: 7vw;
   }
   .nav-right {
     gap: flex-start;
@@ -469,7 +469,7 @@ this look great on my iphone 5s /:) */
 /* crazy tiny screens bc we love everyone */
 @media (max-width: 300px) {
   body{
-    font-size: 10px;
+    font-size: clamp(0.4em, 3.5vw, 1em);
   }
 
   nav {
@@ -489,7 +489,7 @@ this look great on my iphone 5s /:) */
   }
 
   .nav-logo {
-    height: 20px; /* smaller logo  */
+    height: 15px; /* smaller logo  */
   }
 
   .intro-title {
