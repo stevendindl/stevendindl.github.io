@@ -338,7 +338,7 @@ footer {
 }
 
 /* Mobile / shrunken styles */
-@media (max-width: 850px) {
+@media (max-width: 820px) {
 
   /* .main {
     padding-left: 5%;
@@ -458,7 +458,6 @@ this look great on my iphone 5s /:) */
   }
   .job-entry {
     width: 95vw;
-    max-width: 98vw;
     max-width: 90%;
     flex: none;
     padding: 0;
@@ -466,9 +465,75 @@ this look great on my iphone 5s /:) */
 
 }
 
-/* @media (max-width: 300px) {
+/* crazy tiny screens bc we love everyone */
+@media (max-width: 300px) {
+  body{
+    font-size: 10px;
+  }
 
-} */
+  nav {
+    padding: 5px 10px;
+    font-size: clamp(0.6em, 2vw, 0.8em); /* scales nicely with screen */
+    flex-wrap: wrap; /* allows nav content to stack if needed */
+  }
+
+  .nav-left {
+    padding-left: 1%;
+    padding-right: 1%; 
+  }
+
+  .nav-right {
+    flex-wrap: wrap;
+    padding-left: 1%;
+  }
+
+  .nav-logo {
+    height: 20px; /* smaller logo  */
+  }
+
+  .intro-title {
+    font-size: clamp(12px, 5vw, 24px);
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .intro-title {
+   font-size: 5vw;
+  }
+
+  .footer-logo {
+   width: 50vw;
+  }
+
+  .job-text {
+    flex-wrap: wrap;
+  }
+
+  span {
+    flex-wrap: wrap;
+  }
+
+  .jobs-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .job-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 10px; */
+    font-size: clamp(0.85em, 3.5vw, 1em);
+  }
+
+  .jobs-text {
+     font-size: clamp(0.85em, 3.5vw, 1em);
+  }
+
+  .job-entry b span {
+    font-size: clamp(1em, 4vw, 1.08em);
+  }
+}
 
 /* End of projects classes */
 /* End of footer */
