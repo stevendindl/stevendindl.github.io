@@ -35,12 +35,6 @@ body {
   padding-bottom: 20px;
 }
 /* Makes sure there is a gap between main and footer by postitioning */
-.wrapper {
-  min-height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 h1, h2 {
   color: #000000;       
@@ -295,12 +289,12 @@ footer {
   margin-bottom: 10px;
 }
 
-@media (min-height: 1150px) and (min-width: 1360) {
-  /* nav {
-    margin-top: ;
-  } */
+@media (min-height: 1050px) {
   .wrapper {
-      min-height: 100vh; 
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
