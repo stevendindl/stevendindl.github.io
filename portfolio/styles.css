@@ -327,12 +327,6 @@ footer {
     padding-right: 20%;
   }
 
-  .intro-flex {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
   .nav-left {
     padding-left: 15%;
   }
@@ -377,7 +371,7 @@ footer {
   
 } */
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   h1, h2 { 
     font-size: 1.2em;
   }
@@ -423,7 +417,7 @@ footer {
 
 /* This tiny view port adjustment makes 
 this look great on my iphone 5s /:) */
-@media (max-width: 400px) {
+@media (max-width: 560px) {
   body{
     font-size: 14px;
   }
@@ -471,6 +465,10 @@ this look great on my iphone 5s /:) */
   }
 
 }
+
+/* @media (max-width: 300px) {
+
+} */
 
 /* End of projects classes */
 /* End of footer */
