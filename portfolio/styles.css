@@ -269,7 +269,7 @@ footer {
 }
 
 .footer-spacer {
-  min-height: 40vh;
+  min-height: 10vh;
   width: 100%;
 }
 
@@ -365,6 +365,11 @@ footer {
     padding-right: 8%;
   }
 
+  .footer-spacer {
+    min-height: 40vh;
+    width: 100%;
+  }
+
 }
 
 /* @media (max-width: 700px) {
@@ -411,6 +416,11 @@ footer {
     max-width: 90%;
     flex: none;
     padding-top: 5px;
+  }
+
+  .footer-spacer {
+    min-height: 40vh;
+    width: 100%;
   }
   
 }
