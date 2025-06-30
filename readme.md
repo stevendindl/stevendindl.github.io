@@ -1,5 +1,9 @@
-# stevendindl.github.io
-## GitHub Pages Repository / Portfolio Website
+# stevendindl.com
+### GitHub Pages Repository / Portfolio Website
+
+[![Steven Dindl Logo (Vertical)](portfolio/images/text-logo.svg)](https://stevendindl.github.io/)
+
+###### Visit stevendindl.com/portfolio
 
 ---
 
@@ -30,7 +34,7 @@
 - **Contact Integration**: Links to LinkedIn, GitHub, and email
 
 ---
-
+[![Steven Dindl Logo (Horizontal)](portfolio/images/logo_2_dark.svg)](https://stevendindl.github.io/)
 ###### [Explore more of my projects on my portfolio site](https://stevendindl.github.io/)
 
 --- 
