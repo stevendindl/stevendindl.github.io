@@ -94,8 +94,6 @@ nav {
 
 .nav-right a:hover {
   color: #324B4F; 
-  /* */
-  /* old : 0f7e47 */
 }
 
 .navbar a {
@@ -126,12 +124,12 @@ nav {
 
 .intro-title {
   min-width: 220px;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 .self-img {
   width: 100%;
-  max-width: 380px;
+  max-width: 300px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -298,7 +296,7 @@ footer {
   }
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 2235px) {
   .jobs-list {
     flex-direction: column;
     align-items: center;
@@ -315,12 +313,6 @@ footer {
 }
 
 @media (max-width: 1200px) {
-
-  .self-img {
-    width: 350px;
-    height: 350px;
-    /* border-radius: 40px; */
-  }
 
   .main {
     padding-left: 20%;
@@ -346,8 +338,8 @@ footer {
   } */
 
   .self-img {
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     /* border-radius: 40px; */
   }
 
@@ -435,9 +427,9 @@ this look great on my iphone 5s /:) */
     font-size: 1em;
   }
   .self-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    /* border-radius: 20px; */
   }
   nav {
     padding: 10px 10px;
@@ -453,7 +445,7 @@ this look great on my iphone 5s /:) */
     gap: flex-start;
   }
   .self-img {
-    width: 98%;
+    width: 95%;
     height: auto;
   }
   .intro-title h3 {
