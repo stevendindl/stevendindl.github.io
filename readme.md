@@ -1,7 +1,9 @@
 # stevendindl.com
 ### GitHub Pages Repository / Portfolio Website
 
-[![Steven Dindl Logo (Vertical)](portfolio/images/text-logo.svg)](https://stevendindl.github.io/)
+<a href="https://stevendindl.github.io/">
+  <img src="portfolio/images/text-logo.svg" alt="Steven Dindl Logo (Vertical)" style="width:200px;"/>
+</a>
 
 ###### Visit stevendindl.com/portfolio
 
